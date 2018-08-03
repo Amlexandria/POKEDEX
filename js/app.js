@@ -26,13 +26,13 @@ $(document).ready(function() {
     // const ajaxInputPokemons = (theUserWantsThisPokemon) => {
         
     // -----Ajax para imprimir todos los pokemones al cargar la página
+
+     
         $.ajax({
             url:'https://pokeapi.co/api/v2/pokemon/',
             type: 'GET',
             datatype: 'json',
-            // data :{
-            //     q: pokemon,
-            // }
+            
         })
         .done((response)=>{
             console.log(response);
