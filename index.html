@@ -35,23 +35,22 @@
             <a class="waves-effect waves-light btn col s3"><i class="material-icons right">search</i>go!</a>
         </div>
     </section>
-    <section>
-        <div class="row">
+    <section class="row">
             <div id="pokemons-container" class=" offset-s1 col s10 m10 l8"></div>
         
-            <div id="content-template" class="row" style="display: none">
-                <div class="col s12 m6">
-                    <div class="card blue-grey darken-1 z-depth-3">
-                        <div class="card-content white-text">
-                            <img class="center-align responsive-img" src="{{gif}}" alt="">
-                        </div>
-                        <div class="card-action">
-                            <a href="{{url}}">Watch it on <strong>GIPHY</strong>!</a>
-                        </div>
-                    </div>
+            <div id="content-template" class="card col s12 m4 l3" style="display: none">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="{{image}}">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">{{name}}<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
             </div>
-        </div>
+        
     </section>
     
 
