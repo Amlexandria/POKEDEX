@@ -1,3 +1,45 @@
-.parallax-container {
-    height: 20rem;
+nav {
+    position: fixed;
+    z-index: 10;
+    background-color: #3C5AA6;
+}
+
+nav .brand-logo.left {
+    left: 2rem;
+    color: #FFCB05;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+/* i.right {
+    float: right;
+    margin-left: 50px;
+} */
+
+.card .card-title {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Tajawal', sans-serif;
+    color: red;
+}
+
+.card .card-content {
+    padding: 0;
+    border-radius: 0 0 2px 2px;
+}
+
+.grey-text.text-darken-4 {
+    color: #306CB4 !important;
+    font-weight: bolder;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+.card .card-reveal {
+    padding: 24px;
+    position: absolute;
+    background-color: #FFCB05;
+    border: 2px dashed #306CB4;
 }

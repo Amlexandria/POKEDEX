@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Frank+Ruhl+Libre:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:700|Tajawal" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/app.css">
@@ -14,41 +14,33 @@
     <nav>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo left">Pokedex</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
         </div>
     </nav>
     <main>
-        <!-- <div class="parallax-container">
-            <div class="parallax"><img src="https://i.pinimg.com/564x/cb/c8/18/cbc818045a9a9a16fb4424e83b8f6cbc.jpg"></div>
-        </div> -->
     </main>
     <section>
-        <div class="row">
+        <!-- <div class="row">
             <div class="input-field offset-s2 col s5">
                 <input value="" id="input" type="text" class="validate">
                         <label class="active" for="first_name2">pokemon</label>
             </div>
             <a class="waves-effect waves-light btn col s3"><i class="material-icons right">search</i>go!</a>
-        </div>
+        </div> -->
     </section>
     <section class="row">
         <!--CONTENDEDOR DE POKEMONES -->
-            <div id="pokemons-container" class=" offset-s1 col s10 m10 l8"></div>
+            <div id="pokemons-container" class=" offset-s1 offset-m1 offset-l2 col s10 m10 l8"></div>
         <!-- TEMPLATE CARD POKEMON -->
         <div id="content-template" style="display: none">
-            <div  class="card col s12 m4 l3" >
+            <div  class="card col s6 m4 l3" >
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="{{image}}">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator grey-text text-darken-4"><strong>{{name}}</strong><i class="material-icons right">more_vert</i></span>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">{{name}}<i class="material-icons right">close</i></span>
+                    <span class="card-title grey-text text-darken-4"><strong>{{name}}</strong><i class="material-icons right">close</i></span>
                     <p><strong>Ability: </strong>{{ability1}}.</p>
                     <p><strong>Heigth: </strong>{{heigth}}</p>
                     <p><strong>Weight: </strong>{{weight}}</p>
